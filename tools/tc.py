@@ -47,8 +47,8 @@ if __name__ == "__main__":
     # Network configuration using the tc command
     config = {
         'delay': ('200ms', '50ms'),
-        'loss': ('10%', '25%'),
-        'reordering': ('25%', '50%')
+        'loss': ('30%', '35%'),
+        'reordering': ('40%', '50%')
     }
 
     print("Do not have multiple instances of this script executing at the same time!\n")

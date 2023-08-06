@@ -1,0 +1,10 @@
+Exception in thread "Thread-1" java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@53a4a7fb[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@7332a0af[Wrapped task = cs451.implementation.PerfectLink$$Lambda$29/0x00000008000d7040@50166aa6]] rejected from java.util.concurrent.ScheduledThreadPoolExecutor@112dd26e[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 2722351]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2055)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:825)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor.delayedExecute(ScheduledThreadPoolExecutor.java:340)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor.scheduleAtFixedRate(ScheduledThreadPoolExecutor.java:632)
+	at java.base/java.util.concurrent.Executors$DelegatedScheduledExecutorService.scheduleAtFixedRate(Executors.java:785)
+	at cs451.implementation.PerfectLink.sendDataMessage(PerfectLink.java:73)
+	at cs451.implementation.LinkHost.broadcastRelayMessage(LinkHost.java:143)
+	at cs451.implementation.LinkHost.lambda$beginReception$0(LinkHost.java:91)
+	at java.base/java.lang.Thread.run(Thread.java:829)
